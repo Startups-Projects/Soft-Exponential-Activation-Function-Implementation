@@ -12,7 +12,6 @@ class Dense_layer(tf.keras.layers.Layer):
     def __init__(self, output_neurons):
         super(Dense_layer, self).__init__()
         self.units = output_neurons
-        self.alphas = output_neurons
 
     def build(self, input_shape):
         self.w = self.add_weight(shape=(input_shape[-1], self.units),
@@ -28,7 +27,7 @@ class Dense_layer(tf.keras.layers.Layer):
         config = super().get_config()
         config.update({
             'units': self.units,
-            'alphas': self.alphas})
+            })
         return config
 
     def call(self, inputs):
