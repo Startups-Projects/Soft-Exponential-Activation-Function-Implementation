@@ -1,5 +1,6 @@
 # Soft-Exponential-Activation-Function:
 
+self adapting activation function
 Implementation of parameterized soft-exponential activation function. In this implementation, the parameters are the same for all neurons initially starting with -0.01. This activation function revolves around the idea of a "soft" exponential function. The soft-exponential function is a function that is very similar to the exponential function, but it is not as steep at the beginning and it is more gradual at the end. The soft-exponential function is a good choice for neural networks that have a lot of connections and a lot of neurons.
 
 This activation function is under the idea that the function is logarithmic, linear, exponential and smooth.
